@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <title>Formulaire</title>
+    <meta charset="UTF-8" >
+</head>
+<body>
+    <form method="post" action="connectDB.php"> 
+
+        <legend>Renseignements</legend> 
+        <label for="famille">Famille:</label> 
+        <input type="text" name="famille" id="famille" />
+        <br>   
+        <label for="nom">Nom:</label> 
+        <input type="text" name="nom" id="nom" />
+        <br>
+        <label for="prenom">Prénom:</label> 
+        <input type="text" name="prenom" id="prenom" />
+        <br>
+        <label for="presence">Présence au mariage:</label> 
+        <input type="checkbox" name="presence" id="presence" />
+        <br>
+        <label for="brunch">Présence au brunch:</label> 
+        <input type="checkbox" name="brunch" id="brunch" />
+        <br>
+        <label for="voiture">Aura une voiture:</label> 
+        <input type="checkbox" name="voiture" id="voiture" />
+        <br>
+        <label for="email">E-mail:</label>
+         <textarea name="email"></textarea>
+         <br>
+     <input type="submit" value="Envoyer" /> 
+     </form>
+     <br>
+     <a href="http://localhost:8090/phpmyadmin">Base de donnée</a>
+     <br><br>
+     
+     <form method="GET" action="ShowDB.php">
+         <input type="submit" value="Voir la Base de donnée" />
+     </form>
+</body>
+</html>
